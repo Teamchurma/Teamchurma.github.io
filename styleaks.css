@@ -1,0 +1,111 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+/*background-color: #7ee8fa;
+background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);*/
+background: #B2FEFA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.wrapper{
+margin-top:2%;
+}
+.wrapper h1{
+font-family: 'Lora', serif;
+font-size:52px;
+margin-bottom:60px;
+text-align:center;
+}
+.team{
+display:flex;
+text-align: center;
+width:auto;
+justify-content:center;
+flex-wrap:wrap;
+}
+.team .team_member{
+background: #fff;
+margin: 5px;
+margin-botttom:10px;
+width:300px;
+padding:20px;
+line-height:20px;
+color:#8e8b8b;
+position:relative;
+}
+.team .team_member h3{
+color:#81c644;
+font-size:26px;
+margin-top:50px;
+} 
+.team .team_member p.role{
+color:chartreuse;
+font-size:L12px;
+text-transform:uppercase;
+margin:12px 0;
+}
+.team .team_member .team_img{
+width:100px;
+height:100px;
+position:absolute;
+top:-100px;
+    left:50%;
+    
+transform:translateX(-60%);
+background:#fff;
+}
+.team .team_member .team_img img{
+width:150px;
+height:150px;
+    border-radius:50px;
+}
+.team .team_member .social-links{
+ padding-top:15px;
+ transition: all .5s ease;
+ margin-top:-40px;
+} 
+.team .team_member .social-links:hover{
+transform:translateY(-20px);
+}
+
+.team .team_member .social-links a{
+display: inline-block;
+height:32px;
+width:32px;
+background-color:#81c644;
+color:antiquewhite;
+border-radius:70%;
+margin:0 2px;
+text-align:center;
+line-height:32px;
+font-size:16px;
+}
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color:aliceblue
+}
+@keyframes changetext{
+    0%{content: "Ramswarup Kulhary";}
+    20%{content: "Akshat Agrawal";}
+    35%{content: "Bhuwnesh Singh";}
+    50%{content: "Ved Prakash Shukla";}
+    60%{content: "Rajat Chauhan";}
+    80%{content: "Kapil Kumar";}
+    90%{content: "Abhishek Gautam";}
+    100%{content: "Aqeeb Khan";}
+
+}
+/*@media(max-width: 991px)
+{
+    .team{
+        flex-basis: calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}*/
